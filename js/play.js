@@ -69,7 +69,7 @@ function play_create()
 //The gravity of generated pumpkins increase with the level.
 function generate_pumpkin()
 {
-	var pumpkinX = game.rnd.integerInRange(1, 30);
+	var pumpkinX = game.rnd.integerInRange(1, 24);
 	var pumpkin = pumpkins.create(pumpkinX*32, 0, 'pumpkin');
 	pumpkin.body.gravity.y = game.rnd.integerInRange(100, 300) + current_level*50;
 }
